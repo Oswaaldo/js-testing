@@ -13,12 +13,10 @@
 //                      "*ded*",
 //                      "*****"]
 
-
 const solution = picture => {
-    let width = picture[0].length + 2;
-    return ['*'.repeat(width), ...picture.map(line => `*${line}*`), '*'.repeat(width)];
+    const width = picture[0].length + 2;
+    return ['*'.repeat(width), ...picture.map(line => `*${line}*`), '*'.repeat(width)]
 }
 
 let picture = ["abc", "def"];
-
 console.log(solution(picture));
